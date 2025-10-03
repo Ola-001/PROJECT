@@ -2,7 +2,7 @@
 
 # 🎨 Art Shop Website Documentation. 
 
-## 📌 Project Overview
+##  Project Overview
 Project Name: Interactive Art shop
 Author: Olamide Tadagbe Okoosi
 Version: 1.0
@@ -12,13 +12,13 @@ This project is an art website where users can explore, buy, and sell artwork. T
 The goal of the website is to provide a simple and engaging platform for artists and buyers.
 
 The main objetive of this project is to provide a digital space where
-1 Artists can show case and sell thier work.
-2 Buyers can discover and purchase unique artwork
-3 Customers can enjoy browsing art collections in an interative and engaging way.
+1. Artists can show case and sell thier work.
+2. Buyers can discover and purchase unique artwork
+3. Customers can enjoy browsing art collections in an interative and engaging way.
 
 The website serves as both a marketplace and a gallery, making art more accessible to a wider audience.
 
-## 🚀 Features
+## Features
 .Responsive Design: Mobile-friendly with a collapsible menu.
 .Navigation Bar: Links to Home, Products, About, and Contact sections.
 .Search Bar: Allows users to search for products.
@@ -32,7 +32,7 @@ Product Categories:
 .Social Media Integration: Icons for Facebook, Instagram, and Twitter.
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML - Page structure
 - CSS - Styling and Layout
 - Responsive Design _ Media queries for different screen size 
@@ -40,7 +40,7 @@ Product Categories:
 - Mailto Links – Direct email ordering system
 
 
-## 📂 Project Structure
+##  Project Structure
 /project-folder
 │── index.html                  
 │── InteractiveOnlineStorestyle.css   
@@ -59,3 +59,19 @@ Product Categories:
 │    ├── FACEBOOK-removebg-preview.png
 │    ├── IG-removebg-preview.png
 │    ├── TWITTER-removebg-preview.png
+
+## How to Run the Project
+.Download the project files and place them in the same directory.
+.Open index.html in any modern browser (Chrome, Edge, Firefox).
+.Ensure the InteractiveOnlineStorestyle.css file is linked correctly.
+.Ensure all image files are in the correct /images folder.
+
+## Future Improvments
+.Add a shopping cart and checkout system.
+.Replace mailto: order system with an integrated form or database.
+.Add JavaScript for search functionality.
+.Improve accessibility (alt text, ARIA roles).
+.Add payment gateway integration (PayPal, Bank payment).
+
+## Credit
+Developer: Olamide Tadagbe Okoosi
