@@ -1,0 +1,228 @@
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+    background-image: url(image1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header section styling */
+.header-section {
+  position: relative;
+  text-align: center;
+  padding: 150px 20px; /* top/bottom padding makes the header taller */
+  background-color:transparent; /* or a subtle background image/color */
+}
+
+.header-section h1 {
+  font-size: 4rem; /* make the main title much bigger */
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: expanded;
+  color: rgb(225, 192, 2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-section p {
+  font-size: 1.5rem; /* tagline slightly bigger */
+  color: rgb(255, 255, 255);
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Site title */
+.relative-box {
+  text-align: center;
+  top: 20px;
+  position: sticky;
+  background-color: rgb(234, 208, 63);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  position: sticky;   /* <-- makes navbar always visible */
+  top: 0;    /* stick to the top */
+  left: 0;
+  width: 100%;   /* full width */
+  background-color: rgb(234, 208, 63); /* same as site title or choose another */
+  z-index: 1000;     /* stays above other content */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    font-size: large;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-display: swap;
+    font-stretch: expanded;
+    color: rgb(225, 192, 2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: gold;
+  margin: 20px 0;
+}
+
+h2, h3 {
+  color: gold;
+}
+
+/* ------------------ GENERAL NAVBAR STYLING ------------------ */
+
+.navbar {
+  width: 100%;
+  background: rgb(234, 208, 63);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Prevent dropdown from being cut off */
+.relative-box {
+  overflow: visible;
+}
+
+/* ------------------ HAMBURGER DEFAULT HIDDEN ------------------ */
+.hamburger {
+  display: none;
+  font-size: 34px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* ------------------ MOBILE MENU ------------------ */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: static !important;
+    flex-direction: column;
+    align-items: center; /* ✅ center everything */
+    padding: 0;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    margin: 10px auto; /* ✅ center hamburger */
+  }
+
+  /* Mobile menu hidden by default */
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%; /* ✅ full width dropdown */
+    text-align: center; /* ✅ center menu text */
+    background: rgb(234, 208, 63);
+    padding: 20px 0;
+    gap: 20px;
+    border-top: 2px solid rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center; /* ✅ centers list items */
+  }
+
+  /* ✅ When checkbox is checked, show menu */
+  #menu-toggle:checked + .hamburger + ul {
+    display: flex;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    display: inline-block;
+    width: 100%;
+  }
+}

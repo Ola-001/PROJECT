@@ -14,6 +14,7 @@ body {
     padding-top: 200px; 
 }
 
+
 main, section, #about, .video {
   scroll-margin-top: 200px; 
 }
