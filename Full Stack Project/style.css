@@ -181,6 +181,22 @@ h2, h3 {
   display: none;
 }
 
+.intro-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(50, 49, 49, 0.4); /* translucent overlay */
+  backdrop-filter: blur(7px); /* applies blur to background behind the section */
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: white;
+}
+
+
+
 /* ------------------ MOBILE MENU ------------------ */
 
 @media (max-width: 768px) {

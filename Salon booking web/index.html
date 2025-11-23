@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Booking Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-section">
+
+      <img src="VANITY SALON.png" class="Picture" alt="logo">
+
+        <input type="text" placeholder="Search products..." name="search">
+        <button type="submit">Search</button>
+
+      
+        <input type="checkbox" id="menu-toggle">
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+        <nav class="navbar">
+          <div class="relative-box">
+            <ul class="nav-menu">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="booking.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+      
+      <a href="cart.html">
+        <img src="cart.png" class="cart-icon" alt="Cart">
+      </a>
+
+      <a href="profile.html">
+        <img src="profile.png" class="profile-icon" alt="Profile">
+      </a>
+    </div>
+  </header>
+  <hr>
+
+  <main class="register">
+    <div class="details">
+      <form action="/action_page.php" method="get">
+        <label for="fname">Username:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="password">Enter password:</label>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    
+        <a href="create-account.html">
+          <p>
+            OR Create Account 
+          </p>
+        </a>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <img src="VANITY SALON.png" class="footer-logo" alt="Vanity Salon Logo">
+      <p>Your trusted beauty and wellness destination.  
+        Book appointments, shop products, and experience premium salon services.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: info@vanitysalon.com</p>
+      <p>Phone: +44 1234567890</p>
+      <p>Location: London</p>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Vanity Salon • All Rights Reserved</p>
+  </div>
+</footer>
+
+  
+</body>
+</html>
