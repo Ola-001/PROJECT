@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Vanity Salon</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+  <!-- HEADER WILL LOAD HERE -->
+  <div id="header"></div>
+
+    <main class="cart-container">
+        <div id="cart-items"></div>
+        <h3>Total: £<span id="total-price">0</span></h3>
+
+        <div id="cart-items"></div>
+    </main>
+
+    <main class="">
+        <section class="appointment">
+            <div class="appointment-date">
+                <h3>Select Appointment Date & Time</h3>
+                <input type="date" id="appointmentDate">
+                <input type="time" id="appointmentTime">
+                <button id="saveDateTime">Save Appointment</button>
+            </div>
+        </section>
+
+            <div class="cart-total">
+                <a href="check-out.html">
+                    <p>check-out</p>
+                </a>
+            </div>
+            
+        </section>
+    </main>
+
+      <!-- FOOTER WILL LOAD HERE -->
+    <div id="footer"></div>
+
+    <!-- LOAD SHARED HEADER + FOOTER -->
+    <script src="layout.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>

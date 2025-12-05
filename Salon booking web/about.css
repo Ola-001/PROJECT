@@ -1,11 +1,12 @@
+/* GOOGLE FONT LOOK */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #E7D3B2;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5efe6;
+  color: #333;
 }
+
+/* ---------------- HEADER ---------------- */
 .header {
     position: sticky;
     top: 0;
@@ -88,21 +89,10 @@ h1 {
   width: 250px;
   height: auto;
 }
-
-.Picture {
-    width: 220px;            /* adjusts logo size */
-    height: auto;            /* keeps aspect ratio */
-    display: block;
-    object-fit: contain;     /* keeps image clean */
-    cursor: pointer;         /* looks clickable */
-    transition: transform 0.25s ease, opacity 0.25s ease;
+.cart-icon, .profile-icon {
+  width: 30px;
+  margin-left: 15px;
 }
-
-.Picture:hover {
-    transform: scale(1.05);  /* slight zoom on hover */
-    opacity: 0.9;            /* subtle fade effect */
-}
-
 
 /* Navbar */
 .navbar {
@@ -183,134 +173,70 @@ h1 {
   display: none;
 }
 
-/* Layout container */
-.register {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url("IMAGES/1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
+/* ---------------- ABOUT SECTION ---------------- */
+.about-section {
+  background: linear-gradient(to bottom, #f5efe6, #e7d3b2);
+  padding: 80px 20px;
 }
 
-
-/* Form wrapper */
-.details {
-  background: #E7D3B2;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 400px;
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* Form title */
-.details h2 {
+.about-container h1 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 26px;
-  color: #333;
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #8b5e3c;
 }
 
-/* Labels */
-.details label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #444;
+.about-container h2 {
+  margin-top: 30px;
+  color: #a67c52;
 }
 
-/* Input fields */
-.details input[type="text"],
-.details input[type="password"],
-.details input[type="email"] {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 15px;
-  transition: all 0.2s ease;
+.about-container p,
+.about-container li {
+  font-size: 17px;
+  line-height: 1.8;
 }
 
-/* Focus effect */
-.details input:focus {
-  border-color: #A8BBA8;
-  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
-  outline: none;
+.about-container ul {
+  padding-left: 20px;
 }
 
-/* Submit button */
-.details input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background:#A8BBA8;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.25s;
-}
-
-.details input[type="submit"]:hover {
-  background: #A8BBA8;
-}
-
-/* Alternative link text */
-.alt-link {
-  text-align: center;
-  margin-top: 15px;
-  color: #666;
-}
-
-.alt-link a {
-  color: #A8BBA8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.alt-link a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER STYLES */
+/* ---------------- FOOTER ---------------- */
 .footer {
-  background: #111;
-  color: #eee;
-  padding: 40px 0 10px;
-  margin-top: 60px;
-  font-family: Arial, sans-serif;
+  background: #000000;
+  color: white;
+  padding: 50px 20px 20px;
 }
 
 .footer-container {
-  align-items: center;
-  width: 90%;
-  max-width: 1300px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
 
-/* Columns */
 .footer-col {
   flex: 1;
-  min-width: 220px;
-  align-items: center;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
 }
 
 .footer-col h3 {
   margin-bottom: 15px;
-  font-size: 18px;
-  color: #fff;
-  border-bottom: 2px solid  #A8BBA8;
-  display: inline-block;
-  padding-bottom: 4px;
+  color: #e7d3b2;
 }
 
 .footer-col ul {
@@ -318,49 +244,19 @@ h1 {
   padding: 0;
 }
 
-.footer-col ul li {
-  margin: 8px 0;
-}
-
 .footer-col ul li a {
-  color: #ccc;
+  color: #f5efe6;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
-  color: #A8BBA8;
+  text-decoration: underline;
 }
 
-/* Logo */
-.footer-logo {
-  width: 1px;
-  margin-bottom: 10px;
-}
-
-/* Social Icons */
 .social-icons img {
-  width: 28px;
+  width: 30px;
   margin-right: 10px;
-  filter: brightness(0) invert(1);
-  transition: 0.3s;
 }
-
-.social-icons img:hover {
-  transform: scale(1.15);
-}
-
-/* Bottom bar */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #333;
-  padding-top: 10px;
-  font-size: 14px;
-  color: #bbb;
-}
-
-
 
 /* FOOTER LOGO */
 .footer-logo {
@@ -389,6 +285,93 @@ h1 {
     }
 }
 
+.Picture {
+    width: 220px;            /* adjusts logo size */
+    height: auto;            /* keeps aspect ratio */
+    display: block;
+    object-fit: contain;     /* keeps image clean */
+    cursor: pointer;         /* looks clickable */
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.Picture:hover {
+    transform: scale(1.05);  /* slight zoom on hover */
+    opacity: 0.9;            /* subtle fade effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #bfa68f;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.about-salon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+}
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+}
+
+.why {
+  list-style: none; 
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.why ul {
+    list-style: none;   /* removes bullet points */
+    padding-left: 0;    /* removes the left indentation */
+    margin: 0;          /* optional: cleans extra spacing */
+}
+
+.why ul li {
+    margin-bottom: 10px;  /* optional: spacing between items */
+}
+
+
+.Values {
+  list-style: none; 
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Promise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 700px) {
@@ -436,5 +419,28 @@ h1 {
   #menu-toggle:checked ~ .navbar ul {
     display: flex;
   }
+
+  .Values {
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+  text-align: center;
+  }
+
+  .Why {
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 30px;
+  background: linear-gradient(to left, #A8BBA8, #E7D3B2);
+  border-radius: 20px;
+  text-align: center;
+}  
+
 }
 
