@@ -17,25 +17,21 @@
   <main class="register">
     <div class="details">
 
-      <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username"><br><br>
+      <form action="login.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" name="username" required><br><br>
 
-        <label for="password">Enter password:</label>
-        <input type="password" id="password"><br><br>
+          <label for="password">Password:</label>
+          <input type="password" name="password" required><br><br>
 
-        <input type="submit" value="Login">
-
-        <a href="create-account.html">
-          <p>OR Create Account</p>
-        </a>
+          <input type="submit" name="login" value="Login">
       </form>
-
+      <p>OR <a href="create-account.html">Create Account</a></p>
     </div>
   </main>
 
   <!-- FOOTER WILL LOAD HERE -->
-  <div id="footer"></div>
+    <div id="footer"></div>
 
   <!-- LOAD SHARED HEADER + FOOTER -->
   <script src="layout.js"></script>
